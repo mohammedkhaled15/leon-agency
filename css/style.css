@@ -1,4 +1,7 @@
 /* Start Global Rules */
+:root{
+    --main-color:#12CAB8
+}
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -58,9 +61,6 @@ header .links .icon{
 header .links .icon:hover span:nth-child(2){
     width: 100%;
 }
-header .links:hover  ul{
-    display: block;
-}
 header .links .icon span{
     width: 100%;
     height: 2px;
@@ -84,12 +84,16 @@ header .links ul{
     position: absolute;
     top: 26px;
     right: 0;
-    transition: 0.3s;
+    transition:all 2s;
     display: none;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
+    z-index: 1;
+    -webkit-transition:all 2s;
+    -moz-transition:all 2s;
+    -ms-transition:all 2s;
+    -o-transition:all 2s;
+}
+header .links:hover  ul{
+    display: block;
 }
 header .links ul::after{
     content: "";
@@ -120,5 +124,35 @@ header .links ul li a:hover{
 }
 /* end header */
 /* ----------------------------------------------------------------------------------------- */
+/* start landing section */
+.landing{
+    background-image: url("../imgs/download.jpg");
+    background-size: cover;
+    height: calc(100vh - 64px);
+    position: relative;
+}
+.landing .intro-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 85%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.landing .intro-text h1{
+    margin: 0;
+    color:var(--main-color);
+    font-size: 45px;
+    font-weight: bold;
+}
+.landing .intro-text p{
+    font-weight: 19px;
 
+}
+/* end landing section */
+/* ----------------------------------------------------------------------------------------- */
   
