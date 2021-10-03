@@ -36,6 +36,31 @@
   }
 /* End Global Rules */
 /* ----------------------------------------------------------------------------------------- */
+/* start component */
+.special-header{
+    color: #ebeced;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+}
+.special-header + p{
+    margin: -30px 0 0;
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+}
+@media (max-width:767px){
+    .special-header{
+        font-size: 60px;
+    }
+    .special-header + p{
+        margin-top: -20px;
+    }
+}
+/* end component */
+/* ----------------------------------------------------------------------------------------- */
 /* start header */
 header{
     padding: 20px;
@@ -172,7 +197,6 @@ header .links ul li a:hover{
 }
 .features .container .feat i{
     color: var(--main-color);
-        
 }
 .features .container .feat h3{
     font-weight: 800;
@@ -181,7 +205,11 @@ header .links ul li a:hover{
 .features .container .feat p{
     color: #777;
     line-height: 1.8;
-
 }
-/* start features section  */
+/* end features section  */
 /* ----------------------------------------------------------------------------------------- */
+/* start services */
+
+/* end services */
+/* ----------------------------------------------------------------------------------------- */
+
